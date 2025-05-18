@@ -39,17 +39,18 @@ export function AppSidebar() {
       <SidebarHeader className="pb-0">
         <div className="flex items-center px-2 py-3">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-600 shadow-md">
-              <Brain className="h-5 w-5 text-white transform rotate-12" />
+            <div className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-600 shadow-md overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/50 via-purple-600/50 to-blue-600/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Brain className="h-5 w-5 text-white transform rotate-12 group-hover:scale-110 transition-transform duration-300" />
               <div className="absolute inset-0 rounded-md bg-white/10 backdrop-blur-sm"></div>
               <div className="absolute -right-1 -top-1 flex h-3 w-3 items-center justify-center">
                 <div className="absolute h-3 w-3 animate-ping rounded-full bg-indigo-400 opacity-75"></div>
-                <div className="h-2 w-2 rounded-full bg-indigo-500"></div>
+                <div className="h-2 w-2 rounded-full bg-indigo-500 group-hover:bg-indigo-400 transition-colors duration-300"></div>
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold leading-none tracking-tight">Cogniora</span>
-              <span className="text-xs text-muted-foreground">Cognitive Learning</span>
+              <span className="text-lg font-bold leading-none tracking-tight group-hover:text-indigo-400 transition-colors duration-300">Cogniora</span>
+              <span className="text-xs text-muted-foreground group-hover:text-indigo-500/70 transition-colors duration-300">Cognitive Learning</span>
             </div>
           </Link>
           <div className="ml-auto flex items-center gap-1">

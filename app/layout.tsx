@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Cogniora | Advanced Cognitive Learning Platform",
-  description: "Enhance your learning potential with our intelligent spaced repetition system",
+  description: "Enhance your learning potential with our intelligent spaced repetition system. Cogniora helps you master any subject through scientifically-proven learning techniques.",
+  keywords: "spaced repetition, flashcards, learning platform, cognitive enhancement, memory improvement",
   generator: 'v0.dev'
 }
 
